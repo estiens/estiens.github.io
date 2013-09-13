@@ -1,0 +1,132 @@
+
+        /*imports*/
+        @import 'lesshat';
+   
+        @import url(http://fonts.googleapis.com/css?family=Bubbler+One);
+        @import url(http://fonts.googleapis.com/css?family=Habibi);
+
+
+        /*fonts*/
+        @sans:Helvetica, Arial, sans-serif;
+        @serif:'Habibi',Georgia,serif;
+        @whimsy:'Bubbler One', cursive;
+
+        /*colors*/
+        @bg_color:#ccc;
+        @yellowl:#FFF3D4;
+        @yellowd:#FFE9B3;
+        @greenl:#B6C9AB;
+        @greend:#989D8A;
+        @brown:#4F393D;
+        @blue:#39464f;
+
+    
+
+        /*mixins*/
+        .clear { clear: both; }
+        
+        /*some defaults*/
+
+        h1 {font-size: 42px; font-weight: bold;}
+        h2 {font-size: 32px; font-weight: bold;}
+        h3 {font-size: 22px; font-weight: bold;}
+        h4 {font-size: 16px; font-weight: bold;}
+        a { color: black; text-decoration: none; }
+        a:hover { color:@brown;}
+        ul {list-style-type: none }
+        
+        /*our LESS*/
+
+        body { 
+        font-family:@sans; 
+        background-image: -moz-linear-gradient(top, @blue, @brown);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(@blue), to(@brown));
+        background-image: -webkit-linear-gradient(top, @blue,@brown); }
+        
+        #wrapper {
+          width: 960px; margin:40px auto;padding:10px 20px;background-color:#fff;
+          .border-radius(10px);border:10px dotted @greenl; }
+        
+        header {color:@blue;font-family:@whimsy;}
+        #pic { float: right;width:250px;}
+        #name {margin-bottom:; padding: 0px 15px;letter-spacing: -2px; width:600px;font-size:4em;font-weight:bold;}
+        #contact-info{display:none;}
+        .missionstatement{padding:0px 15px 0px 15px; width:600px;font-size:1.8em;}
+
+        .resumeheader {font-family:@whimsy;color:@blue;background-color:@greend;width:95%;padding:5px 15px;text-align:center;.box-shadow(2px 2px 5px black)}
+        .innerheader{font-family:@serif;text-transform:capitalize;}
+        .innerblock {padding-left:20px;}
+        .computertitle, .programtitle, .researchtitle {text-transform:uppercase}
+        
+        footer{font-family:@serif;width:960px;margin:auto;font-size:.8em;}
+        footer a:hover{color:@yellowl;}
+ 
+
+
+
+		
+/*sidetabs*/
+.sidetab {
+  position: fixed;
+  left: -200px;
+  top: 50%;
+  margin-top: 00px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* fancy schmancy transitions */
+a {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-timing-function: linear, ease-in;
+  -moz-transition-property: all;
+  -moz-transition-duration: 200ms;
+  -moz-transition-timing-function: linear, ease-in;
+  -o-transition-property: color, text;
+  -o-transition-duration: 200ms;
+  -o-transition-timing-function: linear, ease-in;
+}
+
+/*sliding tab styling*/
+
+#slideOut {
+  position:fixed;
+  width:270px;
+  height:180px;
+  top:45%;
+  left:-230px;
+}
+#slideClick{
+  float:right;
+    height:180px;
+    width:40px;
+    background:@greenl;
+.border-radius(0px10px10px0px);
+}
+#slideContent {
+  background:@greend;
+  width: 220px;
+  height: 150px;
+  padding: 30px 0 0 10px;
+    float:left;
+
+}
+#tabtitle{color:@brown;width:200px;margin-left:-85px;
+  font-family:@serif;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+
+.infoicon {.opacity(.5)}
+.infoicon:hover {.opacity(1)}
+.infoicon:first-child, .infoicon:last-child {margin-left: 15px;}
+
+
