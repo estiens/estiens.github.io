@@ -13,7 +13,6 @@
     "http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type=
     "text/javascript"></script>
     <script type="text/javascript">
-//<![CDATA[
     jQuery(function($) {
         $('#slideClick').toggle(function() {
             $(this).parent().animate({left:'0px'}, {queue:false, duration: 300});
@@ -21,7 +20,10 @@
             $(this).parent().animate({left:'-230px'}, {queue:false, duration: 800});
         }); 
     });
-    //]]>
+
+    jQuery(function($) {
+        console.log("I spend a lot of time in the console too!");
+    })
     </script>
 
     <title>Eric Stiens - Resume</title>
@@ -35,7 +37,7 @@
 
             <h1 id="name">Eric Stiens</h1>
 
-            <h3 class="missionstatement">Social Worker,<br>
+            <h3 class="backgroundstatement">Social Worker,
             Researcher, Web/IT consultant</h3>
 
             <h3 class="missionstatement">Seeking: += Ruby/Rails Developer</h3>
@@ -49,8 +51,8 @@
             <h3 class="innerheader">Bitmaker Labs</h3>
 
             <div class="innerblock">
-                <p>2 month intensive course in Ruby and Rails<br>
-                    Focus on TDD and Agile design principles</p>
+                <p>500 hour intensive course in full stack web development<br/>
+                    Primary focus: Ruby and Rails<br/>Secondary focus: JS/jQuery, TDD, RESTful design, HTML/CSS</p>
             </div>
 
             <h3 class="innerheader">Washington University in St. Louis</h3>
@@ -146,8 +148,7 @@
             <h3 class="innerheader">Software/IT</h3>
 
             <div class="innerblock">
-                <p>Ruby, Rails, HTML/CSS, SPSS, Stata, Vensim, NVivo. Knowledge of ARCView
-                and GIS technologies. Familiar with the full stack. Drupal and
+                <p>Ruby, Rails, HTML/CSS, jQuery. Familiar with the full LAMP stack. Drupal and
                 Wordpress. CRM and mailing list tools for non-profits.</p>
             </div>
 
@@ -155,7 +156,7 @@
 
             <div class="innerblock">
                 <p>Proficient with a variety of qualitative, quantitative, and
-                mixed methodologies for program and policy evaluation.</p>
+                mixed methodologies for program and policy evaluation. Familiar with SPSS, Stata, Vensim, NVivo. Knowledge of ARCView and GIS technologies. </p>
             </div>
 
             <h3 class="innerheader">Other</h3>

@@ -74,11 +74,12 @@ header {
 #contact-info {
   display: none;
 }
-.missionstatement {
+.backgroundstatement, .missionstatement {
   padding: 0px 15px 0px 15px;
-  width: 600px;
-  font-size: 1.8em;
+  width: 800px;
+  font-size: 2em;
 }
+
 .resumeheader {
   font-family: 'Bubbler One', cursive;
   color: #39464f;
