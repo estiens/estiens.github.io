@@ -77,7 +77,11 @@ header {
 .backgroundstatement, .missionstatement {
   padding: 0px 15px 0px 15px;
   width: 800px;
-  font-size: 2em;
+  font-size: 1.8em;
+}
+
+.backgroundstatement a, .missionstatement a {
+  color: #39464f;
 }
 
 .resumeheader {
